@@ -1,7 +1,6 @@
 body {
   padding-top: 55px;
   background-image: linear-gradient(135deg, #6E45E1, #89D4CF);
-  "/Users/sanz/Documents/DALL.E/New Folder With Items/DALL·E 2022-09-03 20.45.23 - a cyberpunk illustration of football ground in the outer space .png"
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -35,7 +34,7 @@ body {
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/Users/sanz/Documents/DALL.E/New Folder With Items/DALL·E 2022-09-03 20.45.23 - a cyberpunk illustration of football ground in the outer space .png");
+  background-image: url("/Users/sanz/Documents/DALL.E/3/DALL·E 2022-09-03 20.45.23 - a cyberpunk illustration of football ground in the outer space .png");
   overflow: hidden;
 }
 .box-form .left .overlay {
@@ -162,4 +161,20 @@ label span.text-checkbox {
 
 label input[type="checkbox"] {
   display: none;
+}
+
+input[type=button]{
+font-size: 16px;
+background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+border: 1px solid #e5a900;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+input[type=button]:hover{
+background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 }
