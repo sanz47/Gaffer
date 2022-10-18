@@ -8,6 +8,21 @@ alert ("Login successfully");
 window.location = "/Users/sanz/Documents/Code/Project/what.html"; // Redirecting to other page.
 return false;
 }
+else if ( username == "manager" && password == "manager"){
+alert ("Login successfully");
+window.location = "/Users/sanz/Documents/Code/Project/manager.html"; // Redirecting to other page.
+return false;
+}
+else if ( username == "physio" && password == "physio"){
+alert ("Login successfully");
+window.location = "/Users/sanz/Documents/Code/Project/physio.html"; // Redirecting to other page.
+return false;
+}
+else if ( username == "player" && password == "player"){
+alert ("Login successfully");
+window.location = "/Users/sanz/Documents/Code/Project/player.html"; // Redirecting to other page.
+return false;
+}
 else{
 attempt --;// Decrementing by one.
 alert("Wrong Password! You have left "+attempt+" attempts");

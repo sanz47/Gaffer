@@ -9,10 +9,10 @@ const client = new Client({
 client.connect();
 client.query('select * from gaffer',(err,res)=>{
   if(!err){
-    //console.log(res.rows);
-    console.log(res.rows[1]);
+    console.log(res.rows);
+    console.log(result[1].name);
     //const row = res.rows;
-    document.getElementById("demo").innerHTML = res.rows[1];
+    //#document.getElementById("demo").innerHTML = "id:"+rows.id;
   }
   else{
     console.log("Error occured: "+err.message);

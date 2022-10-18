@@ -7,7 +7,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #333333;
 }
-
+.socialgg{
+  visibility: hidden;
+}
 .box-form {
   margin: 0 auto;
   width: 80%;

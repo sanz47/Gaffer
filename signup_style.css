@@ -199,3 +199,28 @@ body {
     transform: translateY(0);
   }
 }
+.button7 {background-color: #006A6A; align-content:center; } /* Green */
+
+.button {
+  border-radius: 16px;
+  border: lightgray;
+  color: white;
+  width: 20%;
+  box-shadow: lightgray;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.center {
+  position: absolute;
+  top: 58%;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  text-align:left: ;
+  margin-left: 25px;
+  font-size: 50px;
+}
