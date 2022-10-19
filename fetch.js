@@ -12,7 +12,7 @@ client.query('select * from gaffer',(err,res)=>{
     //console.log(res.rows);
     console.log(res.rows[1]);
     //const row = res.rows;
-    document.getElementById("demo").innerHTML = res.rows[1];
+    
   }
   else{
     console.log("Error occured: "+err.message);

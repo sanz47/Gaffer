@@ -9,43 +9,13 @@ body{
 }
 
 
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
 /* Make the image to responsive */
 .image {
   border-radius: 10px;
   width: 100%;
   height: 450px;
-  opacity: 0.65;
+  opacity: 0.5;
 }
 
 /* The overlay effect - lays on top of the container and over the image */
@@ -79,6 +49,7 @@ body{
 }
 
 .button {
+  
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   border-radius: 16px;
   border: lightgray;
@@ -93,10 +64,37 @@ body{
   margin: 5px 10px;
   cursor: pointer;
 }
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
 .button1 {background-color: #006A6A;margin-left: 10px;margin-top: 80px;} /* Green */
 .button2 {background-color: #006A6A;margin-left: 180px;margin-top: 80px;} /* Blue */
-.button3 {background-color: #006A6A;margin-left: 10px;margin-top: 30px;} /* Green */
-.button4 {background-color: #006A6A;margin-left: 180px;margin-top: 30px;} 
-.button5 {background-color: #006A6A;margin-left: 10px;margin-top: 30px;} /* Green */
-.button6 {background-color: #006A6A;margin-left: 180px;margin-top: 30px;} 
