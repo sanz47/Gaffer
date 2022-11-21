@@ -59,6 +59,7 @@
         <th>Position</th>
         <th>Time to recover(days)</th>
         <th>Kit no</th>
+        <th>Fit</th>
              </tr>
              <?php
                  while($rows=$result->fetch_assoc())
@@ -77,6 +78,27 @@
         <td><label class="container"><?php echo $rows['position'];?></label></td>
         <td><label class="container"><?php echo $rows['timetorecover'];?></label></td>
         <td><label class="container"><?php echo $rows['kitno'];?></label></td>
+         <div class="form-group">
+                <label for="fit">Fit</label>
+                <div>
+                  <label for="yes" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="fit"
+                      value="y"
+                      id="yes"
+                    />Yes</label
+                  >
+                  <label for="no" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="fit"
+                      value="n"
+                      id="no"
+                    />No</label>
+                </div>
+              </div>
+                
              </tr>
              <?php
                  }
