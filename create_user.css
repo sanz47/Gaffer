@@ -72,6 +72,7 @@ body{
 .center {
   position: absolute;
   top: 58%;
+  margin-top: 30px;
   font-family: "Open Sans", sans-serif;
   width: 100%;
   text-align: center;
