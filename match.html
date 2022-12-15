@@ -5,7 +5,7 @@
   <title>Schedule A Match</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="/Users/sanz/Documents/Code/Project/create_match.css">
-  <script src="/Users/sanz/Documents/Code/Project/create_player.js"></script>
+  <script src="/Users/sanz/Documents/Code/Project/match.js"></script>
   </head>
 <body>
 
@@ -42,31 +42,45 @@
                   name="matchid"
                 />
               </div>
+<br>
+<form action="connect.php" method="post">
+  <label for="match">Choose Opponent:</label>
+  <select id="match" name="match">
+    <option value="aba">AbaHoney</option>
+    <option value="real">Real Madrid</option>
+    <option value="boka">Boka Juniors FC</option>
+    <option value="kala">KolarBagan</option>
+    <option value="bar">Barcelona</option>
+    <option value="psg">PSG</option>
+    <option value="Moha">Mohamadan</option>
+    <option value="Sevilla">Sevilla/option>
+    <option value="saif">Saif Sporting</option>
+    <option value="Board">Board Bazar FC</option>
+    <option value="bb">BoroBari FC</option>
+    <option value="khan">Khan Villa FC</option>
+    <option value="kol">KalaMeshWar FC</option>
+    <option value="south">South Hall FC</option>
+    <option value="north">North Hall FC</option>
 
-              <div class="form-group">
-                <label for="opponent">Opponent</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="opponent"
-                  name="opponent"
-                />
-              </div>
+  </select>
+
+</form>
+<br>
+
 
               <div class="form-group">
                 <label for="date">Date</label>
                 <input
-                  type="text"
+                  type="date"
                   class="form-control"
                   id="date"
                   name="date"
                 />
               </div>
-
                <div class="form-group">
                 <label for="time">Time</label>
                 <input
-                  type="text"
+                  type="time"
                   class="form-control"
                   id="time"
                   name="time"
