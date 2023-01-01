@@ -13,12 +13,12 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("update player_data set goal = goal + (?), assist = assist + (?),
+		$stmt = $conn->prepare("update player_data set matches = matches + 1, goal = goal + (?), assist = assist + (?),
 		rcard =rcard +(?), ycard=ycard+(?), rating= (rating+(?) )/2.0 where playerid = (?)");
 		$stmt->bind_param("iiiidi", $goal, $assist, $rcard, $ycard, $rating, $playerid);
 		$execval = $stmt->execute();
 		echo $execval;
-		//echo "Registration successfully...";
+		//echo "Updated successfully...";
 		$stmt->close();
 		$conn->close();
 	}

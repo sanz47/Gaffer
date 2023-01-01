@@ -94,7 +94,7 @@ $mysqli->close();
  
 <body>
  <div class="topnav">
-  <a class="active" href="./what.html">Home</a>
+  <a class="active" href="./physio.html">Home</a>
   <a href="#news">Infomation</a>
   <a href="#contact">Contact</a>
   <div class="topnav-right">

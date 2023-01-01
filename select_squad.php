@@ -22,6 +22,9 @@ $result = $mysqli->query($sql);
 <html lang="en">
  
 <head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./what.css">
+  
     <meta charset="UTF-8">
     <title>Player List</title>
     <style>
@@ -54,25 +57,65 @@ $result = $mysqli->query($sql);
         td {
             font-weight: lighter;
         }
+		.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
     </style>
 </head>
  
 <body>
+ <div class="topnav">
+  <a class="active" href="./manager.html">Home</a>
+  <a href="#news">Infomation</a>
+  <a href="#contact">Contact</a>
+  <div class="topnav-right">
+    <a href="#search">Search</a>
+    <a href="./logout_process.php">Logout</a>
+  </div>
+</div>
     <section>
-        <h1>Players</h1>
+        <h1>Current Squad</h1>
         <!-- TABLE CONSTRUCTION -->
+		<center>
         <table>
             <tr>
 				<th>Team Status</th>
                 <th>Player ID</th>
                 <th>Name</th>
-                <th>Height(cm)</th>
-                <th>Weight(kg)</th>
-				<th>Date of Birth</th>
-				<th>Gender</th>
-				<th>Availability</th>
+                <th>Goal</th>
+                <th>Assist</th>
+				<th>Red card</th>
+				<th>Yellow card</th>
+				<th>Rating</th>
 				<th>Position</th>
-				<th>Time to recover(days)</th>
 				<th>Kit no</th>
 				<th>Select</th>
             </tr>
@@ -94,7 +137,6 @@ $result1=$resul1->fetch_assoc();
 				<td><?php echo $result1['ycard'];?></td>
 				<td><?php echo $result1['rating'];?></td>
 				<td><?php echo $rows['position'];?></td>
-				<td><?php echo $rows['timetorecover'];?></td>
 				<td><?php echo $rows['kitno'];?></td>
 				<td><form action="./select_player.php" method="post">  <input type="hidden" name="var" value=<?php echo $rows['playerid'];?> /> <button method="post">change</button> </form><td>
 				
@@ -104,6 +146,7 @@ $result1=$resul1->fetch_assoc();
 			$mysqli->close();
             ?>
         </table>
+		</center>
     </section>
 </body>
  
