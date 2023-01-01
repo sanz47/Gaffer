@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <title>Create User</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./css/create_player.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./create_player.css">
   <script src="/Users/sanz/Documents/Code/Project/create_player.js"></script>
   </head>
 <body>
 
  <div class="topnav">
-  <a class="active" href="#home">Home</a>
+  <a class="active" href="./what.html">Home</a>
   <a href="#news">Infomation</a>
   <a href="#contact">Contact</a>
   <div class="topnav-right">
     <a href="#search">Search</a>
-    <a href="/Users/sanz/Documents/Code/Project/login.html">Logout</a>
+    <a href="./logout_process.php">Logout</a>
   </div>
 </div>
 
 <section class="width-800px">
   <div class="container">
-  	<img src="./resources/goalpost.png" alt="indoor_football" class="image" width="800">
+  	<img src="./goalpost.png" alt="indoor_football" class="image" width="800">
     <br>
     
 </div>
@@ -32,9 +32,10 @@
   <br>
   <br>   
 
-
+<br>
+<br>
 <div class="player">
-  <form action="./server/create_player.php" method="post">
+  <form action="create_player.php" method="post">
     <div class="form-group">
                 <label for="playerid">Player ID</label>
                 <input
@@ -84,30 +85,8 @@
                   name="dob"
                 />
               </div>
-              <div class="form-group">
-                <label for="gender">Gender</label>
-                <div>
-                  <label for="male" class="radio-inline"
-                    ><input
-                      type="radio"
-                      name="gender"
-                      value="m"
-                      id="male"
-                    />Male</label
-                  >
-                  <label for="female" class="radio-inline"
-                    ><input
-                      type="radio"
-                      name="gender"
-                      value="f"
-                      id="female"
-                    />Female</label>
-                </div>
-              </div>
 
-
-
-<div class="form-group">
+				<div class="form-group">
                 <label for="position">Position</label>
                 <input
                   type="text"
@@ -117,13 +96,22 @@
                 />
               </div>
 
-<div class="form-group">
+				<div class="form-group">
                 <label for="kitno">Kit No.</label>
                 <input
                   type="number"
                   class="form-control"
                   id="kitno"
                   name="kitno"
+                />
+              </div>
+			  <div class="form-group">
+                <label for="salary">Salary</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="salary"
+                  name="salary"
                 />
               </div>
               <input type="submit" class="btn btn-primary" />
@@ -145,7 +133,7 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div></center>
-
+</div>
 </body>
 </html>
 </body>

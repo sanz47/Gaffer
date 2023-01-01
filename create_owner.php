@@ -17,8 +17,21 @@
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Registration successfully...";
+		
+		$c = hash_init("md5");
+	hash_update($c, $ownerid);
+	//$copy_c = hash_copy($c);
+	//echo hash_final($c);
+	//hash_update($copy_c, "content");
+	$pass = hash_final($c);
+		
+		$stmt2 = $conn->prepare("insert into login_table (username, password, type) values(?, ?, 'owner')");
+		$stmt2->bind_param("ss", $ownerid,$pass);
+		$execval2 = $stmt2->execute();
+		$stmt2->close();
+		
 		$stmt->close();
 		$conn->close();
 	}
-	header('Location: ../create_owner.html');
+	header('Location: ./create_owner.html');
 ?>

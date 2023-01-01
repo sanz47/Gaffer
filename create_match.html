@@ -4,29 +4,27 @@
   <meta charset="UTF-8">
   <title>Schedule A Match</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="/Users/sanz/Documents/Code/Project/create_match.css">
-  <script src="/Users/sanz/Documents/Code/Project/create_match.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./create_match.css">
+  <script src="/Users/sanz/Documents/Code/Project/match.js"></script>
   </head>
 <body>
 
  <div class="topnav">
-  <a class="active" href="#home">Home</a>
+  <a class="active" href="what.html">Home</a>
   <a href="#news">Infomation</a>
   <a href="#contact">Contact</a>
   <div class="topnav-right">
     <a href="#search">Search</a>
-    <a href="/Users/sanz/Documents/Code/Project/login.html">Logout</a>
+    <a href="./login.html">Logout</a>
   </div>
+  <br>
 </div>
 
 <section class="width-800px">
   <div class="container">
-  	<img src="/Users/sanz/Documents/Code/Project/goalpost.png" alt="indoor_football" class="image" width="800">
+  	<img src="./goalpost.png" alt="indoor_football" class="image" width="800">
     <br>
-    
 </div>
-<br>
-
 </section>
   <div class="center">Match Information</div>
   <br>
@@ -34,7 +32,7 @@
 
 
 <div class="player">
-  <form action="connect.php" method="post">
+  <form action="create_match.php" method="post">
     <div class="form-group">
                 <label for="matchid">Match ID</label>
                 <input
@@ -44,31 +42,46 @@
                   name="matchid"
                 />
               </div>
+<br>
 
-              <div class="form-group">
-                <label for="opponent">Opponent</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="opponent"
-                  name="opponent"
-                />
-              </div>
+  <label for="match">Choose Opponent:</label>
+  <select id="opponent" name="opponent">
+    <option value="AbbaHoney">AbbaHoney</option>
+    <option value="Real_Madrid">Real_Madrid</option>
+    <option value="Boka_Juniors">Boka_Juniors</option>
+    <option value="KalaBagan">KalaBagan</option>
+    <option value="Barisilona">Barisilona</option>
+    <option value="PSG">PSG</option>
+	<option value="Kolagach">Kolagach</option>
+    <option value="Mohamadan">Mohamadan</option>
+    <option value="Sevilla">Sevilla</option>
+    <option value="Saif_Sporting">Saif_Sporting</option>
+    <option value="Board_Bazar_FC">Board_Bazar_FC</option>
+    <option value="BoroBari_FC">BoroBari_FC</option>
+    <option value="Khan_Villa_FC">Khan_Villa_FC</option>
+    <option value="KalaMeshWar_FC">KalaMeshWar_FC</option>
+    <option value="South_Hall_FC">South_Hall_FC</option>
+    <option value="North_Hall_FC">North_Hall_FC</option>
+	<option value="Kaula_FC">Kaula_FC</option>
+
+  </select>
+
+<br>
+
 
               <div class="form-group">
                 <label for="date">Date</label>
                 <input
-                  type="text"
+                  type="date"
                   class="form-control"
                   id="date"
                   name="date"
                 />
               </div>
-
                <div class="form-group">
                 <label for="time">Time</label>
                 <input
-                  type="text"
+                  type="time"
                   class="form-control"
                   id="time"
                   name="time"
