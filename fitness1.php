@@ -30,7 +30,7 @@
 </style>
 <body>
  <div class="topnav">
-  <a class="active" href="#home">Home</a>
+  <a class="active" href="./physio.html">Home</a>
   <a href="#news">Infomation</a>
   <a href="#contact">Contact</a>
   <div class="topnav-right">
@@ -54,12 +54,10 @@
                  <th>Height(cm)</th>
                  <th>Weight(kg)</th>
         <th>Date of Birth</th>
-        <th>Gender</th>
         <th>Availability</th>
         <th>Position</th>
         <th>Time to recover(days)</th>
         <th>Kit no</th>
-        <th>Fit</th>
              </tr>
              <?php
                  while($rows=$result->fetch_assoc())
@@ -73,7 +71,6 @@
                  <td><label class="container"><?php echo $rows['height'];?></label></td>
                  <td><label class="container"><?php echo $rows['weight'];?></label></td>
         <td><label class="container"><?php echo $rows['dob'];?></label></td>
-        <td><label class="container"><?php echo $rows['gender'];?></label></td>
         <td><label class="container"><?php echo $rows['availability'];?></label></td>
         <td><label class="container"><?php echo $rows['position'];?></label></td>
         <td><label class="container"><?php echo $rows['timetorecover'];?></label></td>
@@ -84,7 +81,7 @@
                  }
              ?>
          </table>
-		 <form action="server/update_fitness.php" method="post">
+		 <form action="update_fitness.php" method="post">
 		 <center>
 		 <div class="form-group">
 				<label for="playerid">Player ID</label>
